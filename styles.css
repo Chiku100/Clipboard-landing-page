@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: top;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    max-width: 1440px;
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(210, 10%, 33%)
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+header {
+    padding: 5% 26%;
+    text-align: center;
+}
+
+.logo {
+    width: 10%;
+}
+
+.buttons input {
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    width: 21%;
+    border-color: transparent;
+    height: 2rem;
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+/* Hover state */
+.ios:hover{cursor:pointer;
+    background-color: rgb(138, 180, 172)
+}
+.mac:hover{cursor:pointer;
+    background-color: hsl(233, 84%, 81%);
+}
+.first-box {
+    padding: 0 26%;
+}
+
+.box {
+    display: flex;
+    padding: 2rem;
+    gap: 5rem;
+    text-align: left;
+}
+
+.box:nth-of-type(2) {
+    width: 95%;
+}
+
+.box h3 {
+    margin-top: 60px;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices .device-headings {
+    padding: 0 26%;
+}
+
+.advertisements {
+    text-align: center;
+}
+
+.companies {
+    display: flex;
+    padding: 2% 15%;
+    gap: 10px;
+}
+
+.images {
+    padding: 50px;
+}
+
+.images img {
+    padding: 40px;
+}
+
+.download {
+    text-align: center;
+    padding: 0 26% 10% 26%;
+}
+
+.contact div .logoimg {
+    width: 30%;
+    margin-top: 2.5rem;
+}
+
+.contact {
+    display: flex;
+
+    place-content: center;
+    background-color: hsl(180, 18%, 96%);
+    gap: 10px;
+}
+
+.contact div {
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 10%;
+    height: 10%;
+    gap: 12px;
+}
+footer{text-align: center;}
+footer a{text-decoration: none;
+color: rgb(221, 163, 92);}
+
+@media screen and (max-width:700px) {
+    body {padding: 0;
+        margin: 0;
+        border-width: 0;
+        font-size: 1rem;
+        background-image: url("./images/bg-header-mobile.png");
+    }
+
+    main {margin-left: -20%;
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        padding: 0;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        place-items: center;
+        gap: 1rem;
+        
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .companies {
+        gap: 5px;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .contact {
+        gap: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .buttons input {
+        width: 120px;
+        margin: 5px;
+    }
+
+    .content-box {
+        text-align: center;
+    }
+
+    .box div img {
+        width: 60%;
+    }
+
+    .box h3 {
+        margin-top: 10px;
+    }
+
+    .devices .device-headings {
+        padding: 0;
+    }
+
+    .devices div img {
+        width: 60%;
+    }
+
+    .advertisements {
+        width: 370px;
+        padding: 10px;
+    }
+    .contact{gap: 0;}
+    .contact div .logoimg {
+        width: 20%;
+        margin: 0;
+    }
+    .images img{
+        text-align: left;
+    }
+
+    .contact div {
+        padding: 0;
+        margin: 0;
+    }
+    #fti{
+        display: flex;
+        text-align: center;
+        margin-left: 35%;
+        width: 10%;
+        height: 10%;
+        gap: 22px;
+    }
+    .categories,.devices,.advertisements,.images img{padding: 20%;}
+   
+}
